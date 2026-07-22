@@ -10,22 +10,108 @@ a:hover {
   color: black;
 }
 
-#demo .minibox, #demo .minibox1 {
-  width: 180px;
-  height: 180px;
-  padding: 13px;
-  margin: 13px;
-  background-color: #d896c5;
+#demo .minibox {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #e1dcf4;
+  transition: 0.5s;
+}
+#demo .minibox:hover {
+  width: 190px;
+  border: 4px solid #8a63db;
+  height: 40px;
 }
 #demo h1 {
-  color: white;
+  color: #6e52aa;
   font-size: 19px;
 }
-#demo .minibox1 {
-  position: fixed;
-  right: 2px;
+@media (max-width: 600px) {
+  #demo .minibox {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8773d9;
+    transition: all 0.2s ease;
+  }
+  #demo .minibox:hover {
+    width: 170px;
+    border: 3px solid #8a63db;
+    height: 50px;
+  }
+  #demo h1 {
+    color: rgba(113, 26, 43, 0.7803921569);
+    font-size: 10px;
+  }
 }
-#demo p {
-  font-size: 23px;
-  color: rgba(40, 40, 40, 0.7647058824);
+@media (max-width: 400px) {
+  #demo .minibox {
+    width: 20px;
+    height: 20px;
+    background-color: #5994ce;
+    border: 1px solid #3fb13d;
+  }
+  #demo h1 {
+    color: #ffffff;
+    font-size: 5px;
+  }
+}
+
+#second .minibox {
+  width: 60px;
+  height: 60px;
+  border: 3px solid black;
+  background-color: #d2e0f8;
+  transition: 0.5s;
+}
+#second .minibox:hover {
+  width: 150px;
+  height: 150px;
+  border-color: #a2d2ce;
+}
+#second h1 {
+  color: #ffffff;
+}
+#second .btn {
+  background-color: #6184cc;
+  color: white;
+  width: 160px;
+  height: 40px;
+  padding: 10px 20px;
+}
+#second .btn h2 {
+  font-size: 12px;
+}
+@media (max-width: 650px) {
+  #second .minibox {
+    width: 200px;
+    height: 200px;
+    background-color: #5f83e3;
+    border-color: #ad6893;
+  }
+}
+@media screen and (max-width: 800px) {
+  #second .btn {
+    background-color: #bd2a7b;
+    color: black;
+  }
+}
+
+#third .minibox {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  color: #fff0d1;
+  transition: 0.5s;
+}
+#third .minibox:hover {
+  border-radius: 50%;
+  border: 4px solid #ecbd74;
+}
+@media screen and (max-width: 400px) {
+  #third .minibox {
+    background-color: #e9a94d;
+    width: 40px;
+    height: 40px;
+    font-size: 7px;
+    border: 2px solid black;
+  }
 }/*# sourceMappingURL=style.css.map */
